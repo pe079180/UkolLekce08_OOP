@@ -8,7 +8,7 @@ Máte následující struktury:
 
 1. Školní třída (Jméno, Ročník, 1x Třídní Učitel, List Studentů)
 2. Učitel (Jméno, Přijmení)
-3. Student (Jméno, Přijmení, Rok narozené, Studentské číslo)
+3. Student (Jméno, Přijmení, Rok narození, Studentské číslo)
 
 A vytvořte servisní třídy které provedou následující operace. Zkuste je ale navrhnout za použití konceptů OOP z osmé lekce. Např. použijte Interface, dědičnost, překrývaní metod, ...
 
