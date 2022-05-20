@@ -9,7 +9,7 @@ public class Teacher extends Person implements PersonInterface {
     @Override
     public String toString() {
         return "Teacher{" +
-                "name='" + super.getName() + '\'' +
+                "name='" + getName() + '\'' +
                 ", surname='" + getSurname() + '\'' +
                 '}';
     }

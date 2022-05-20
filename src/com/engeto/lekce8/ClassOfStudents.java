@@ -1,5 +1,10 @@
 package com.engeto.lekce8;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class ClassOfStudents {
     private String name;
     private String grade;
@@ -16,9 +21,11 @@ public class ClassOfStudents {
     @Override
     public String toString() {
         String result;
-        result = "Name: " + name + "\nGrade: " + grade + "\n";
+        result = "ClassOfStudents = {\n";
+        result += "Name: " + name + "\nGrade: " + grade + "\n";
         result += teacher.toString() + "\n";
         result += students.toString() + "\n";
+        result += "}\n";
         return result;
     }
 
@@ -74,8 +81,22 @@ public class ClassOfStudents {
 
     }
 
+    /**
+     * format 3
+     * my format
+     * uses standard toString() method
+     */
     public String outputFormat3() {
         return toString();
+    }
+
+    public void exportToFile(String fileName) throws Exception {
+        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName)))) {
+                    writer.println(outputFormat3());
+
+        } catch (IOException e) {
+            throw new Exception("Error writing to : " + fileName  + ": " + e.getLocalizedMessage());
+        }
     }
 
 }

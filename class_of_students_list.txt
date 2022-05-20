@@ -1,0 +1,7 @@
+ClassOfStudents = {
+Name: 4.C
+Grade: 4
+Teacher{name='Petr', surname='Učitel'}
+StudentList{students=[ID15023 - name='Petra', surname='Studentka', ID15024 - name='Jarda', surname='Jagr']}
+}
+
